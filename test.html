@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/csslogin.css"/>
+<script type="text/javascript" src="jss/jsstest.js"></script>
+</head>
+<body style="background-image:url('img/bg4.png');">
+<center>
+<h1>EXAM MANAGEMENT</h1>
+</center>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+<form>
+<input type="button"  id="button" value ="UPLOAD EXAM" onclick="document.getElementById('id01').style.display='block'" style="width:50%;" />
+</form>
+<div id="id01" class="modal">
+  <form name="myform"class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/h.jpg" alt="EXAMlogo" class="lpulogo">
+    </div>
+
+    <div class="container">
+	EXAM TYPE<select name="dropdown"><option value="MCQ" selected>MCQ</option><option value="SUBJECTIVE">SUBJECTIVE</option></select></br></br>
+      <label for="sid"><b>SUBJECT NAME</b></label>
+      <input type="text" placeholder="Enter SUBJECT NAME" name="sid" required>
+
+      <label for="qa"><b>QUESTION</b></label>
+      <input type="password" placeholder="Enter QUESTION" name="pd" required>
+       <input type="button"  id="button" value ="UPLOAD QUESTION" style="width:100%;" onclick="testpage()">
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <input name="cancel" value="CANCEL" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+    </div>
+</form>
+</body>
+</html> 

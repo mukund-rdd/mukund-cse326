@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/csslogin.css"/>
+<script type="text/javascript" src="jss/jsslogin.js"></script>
+</head>
+<body id="myimg">
+<div id="mydiv">
+<input type="button"  id="button" value ="GO TO LPU WELCOME PAGE" onclick="welcome()" style="width:100%;" />
+<input type="button"  id="button" value ="LOGIN" onclick="document.getElementById('id01').style.display='block'" style="width:100%;" />
+<input type="button"  id="button" value ="CONTINUE WITHOUT LOGIN" onclick="student1()" style="width:100%;" />
+<input type="button"  id="button" value ="UPLOAD TEST " onclick="test()" style="width:100%;" />
+</div>
+<div id="id01" class="modal">
+  <form name="myform"class="modal-content animate" action="" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img/lpulogo1.png" alt="lpu logo" class="lpulogo">
+    </div>
+
+    <div class="container">
+	LOGIN AS:<select name="dropdown"><option value="student" selected>STUDENT</option><option value="teacher">TEACHER</option></select></br></br>
+      <label for="uid"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uid" required>
+
+      <label for="pd"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pd" required>
+       <input type="button"  id="button" value ="login" style="width:100%;" onclick="loginpage()">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <input name="cancel" value="CANCEL" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>
